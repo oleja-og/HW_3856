@@ -4,13 +4,13 @@
 // 782 -> 8
 // 918 -> 1
 
-// Console.WriteLine("enter number from 100 to 999: ");
-// string strnumb = Console.ReadLine();
-// int numb = int.Parse(strnumb);
+Console.WriteLine("enter number from 100 to 999: ");
+string strnumb = Console.ReadLine();
+int numb = int.Parse(strnumb);
 
-// int result = numb%100/10;
+int result = numb%100/10;
 
-// Console.WriteLine($"second number = {result}");
+Console.WriteLine($"second number = {result}");
 
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
@@ -29,7 +29,7 @@ int numb2 = strnumber.Length;
 
 int count = 1;
 // int i = Convert.ToInt32(Math.Pow(10, numb2-count));
-int result;
+int result1;
 
 // int result = numb1%Convert.ToInt32(Math.Pow(10, numb2-count));
 // int result1 = result%Convert.ToInt32(Math.Pow(10, numb2-(count+1)));
@@ -38,8 +38,8 @@ int result;
 
 while (count!=3)
 {
-    result = numb1%Convert.ToInt32(Math.Pow(10, numb2-count));
-    numb1 = result;
+    result1 = numb1%Convert.ToInt32(Math.Pow(10, numb2-count));
+    numb1 = result1;
     count++;
 }
 
@@ -53,13 +53,13 @@ Console.WriteLine(numb1/Convert.ToInt32(Math.Pow(10, numb2-count)));
 // 1 -> нет
 
 
-// Console.WriteLine("enter number from 1 to 7: ");
-// string strnumber1 = Console.ReadLine();
-// int number = int.Parse(strnumber1);
+Console.WriteLine("enter number from 1 to 7: ");
+string strnumber1 = Console.ReadLine();
+int number = int.Parse(strnumber1);
 
 
-// if (number == 6 || number ==7) Console.WriteLine("Weekend!!!");
+if (number == 6 || number ==7) Console.WriteLine("Weekend!!!");
 
-// else if (number <1 || number >7) Console.WriteLine("incorrect input");
+else if (number <1 || number >7) Console.WriteLine("incorrect input");
 
-// else Console.WriteLine("It's not the weekend");
+else Console.WriteLine("It's not the weekend");
